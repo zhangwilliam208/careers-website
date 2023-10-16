@@ -11,7 +11,7 @@ def load_jobs_from_db():
       jobs.append(row._asdict())
   return jobs
 
-
+#
 def load_job_from_db(id):
   with engine.connect() as conn:
     result = conn.execute(
